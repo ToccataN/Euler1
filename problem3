@@ -1,0 +1,15 @@
+var n=prompt("Choose a number between 1 and 1000!");
+var sumAns=[];
+var priNum=[];
+
+for (var i=0;i<n;i++){
+    if (n%i===0){
+        sumAns.push(i);
+    }
+}
+for (var i=0;i<sumAns.length;i++){
+    if (sumAns[i]%2 !==0){
+        priNum.push(sumAns[i]);
+    }
+}
+console.log(priNum);
